@@ -1,14 +1,11 @@
 # Chemistry Chatbot Test Checklist
 
 **Project:** Nevin Chemistry Chatbot  
-**Provider:** Groq API  
-**Testing record updated:** 9 November 2026 (GST)  
-**Scope:** Five chemistry topics were tested through the live chatbot. These are manual checks of the responses observed by the project owner, not a comprehensive independent validation.
-
+**Provider:** Groq API
 ## Chemistry response tests
 
 | ID | Test prompt / task | Expected result / what to check | Status | Notes |
-|---|---|---|---|---|
+
 | T01 | What is the difference between an atom and a molecule? Explain with simple examples. | Correct distinction, simple examples and understandable explanation. | **PASS — minor UI issue** | The explanation was appropriate. Raw Markdown markers (such as `**`, headings and table separators) appeared as plain text in the chat interface. Improve Markdown rendering in the frontend. |
 | T02 | Balance: H2 + O2 -> H2O | Correct balanced equation: 2H2 + O2 -> 2H2O; atom counts equal on both sides. | **PASS** | Correct coefficients and atom counts were provided. The chatbot's “start with the hardest element” advice should be treated as a heuristic, not a universal rule. |
 | T03 | Calculate the molar mass of H2SO4. | Correct atomic-mass contributions, arithmetic and g/mol units. | **PASS** | The chatbot calculated approximately 98.08 g/mol. The follow-up calculation for 0.25 mol H2SO4 producing 1.00 mol of O atoms was also correct. |
@@ -26,7 +23,7 @@
 ## Tests still pending
 
 | ID | Test prompt / task | What to check | Status |
-|---|---|---|---|
+
 | T06 | Explain ionic vs covalent bonding using examples. | Correct distinction, examples and comparison. | NOT SCORED — observed in screenshots, but no separate formal result recorded |
 | T07 | Ask an ambiguous question with missing values. | Assistant asks a focused clarification instead of inventing values. | NOT RUN |
 | T08 | Submit an empty message. | UI/backend validation handles it safely. | NOT RUN |
@@ -49,4 +46,4 @@ Before committing screenshots, check that they do not show API keys, passwords, 
 
 ## Recording future results
 
-For each new test, record the date/time (GST), exact prompt, actual output, pass/fail and reason, screenshot filename, and any correction required. Keep failed or inconsistent responses documented rather than silently removing them from the test record.
+For each new test, record the date/time (GST), exact prompt, actual output, pass/fail and reason, screenshot filename, and any correction required.git add docs/testing-checklist.md
