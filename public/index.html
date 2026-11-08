@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nevin is an AI-powered Chemistry learning assistant that guides students through Chemistry concepts and problems." />
+  <title>Nevin — Chemistry Learning Assistant</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">N</span><div><strong>Nevin</strong><small>CHEMISTRY SIDEKICK</small></div></div>
+      <div class="sidebar-intro">
+        <p class="eyebrow">YOUR LEARNING SPACE</p>
+        <h2>Understand the<br />why, not just the answer.</h2>
+        <p>Ask a Chemistry question and work through it one step at a time.</p>
+      </div>
+      <div class="topic-list">
+        <p class="eyebrow">TRY A TOPIC</p>
+        <button class="topic-chip" data-prompt="Explain the mole concept with a simple example.">⚗️ Mole concept</button>
+        <button class="topic-chip" data-prompt="Teach me how to balance a chemical equation step by step.">⚖️ Balancing equations</button>
+        <button class="topic-chip" data-prompt="Show me how to solve a basic stoichiometry problem step by step.">🧪 Stoichiometry</button>
+        <button class="topic-chip" data-prompt="Explain acids, bases, and pH in simple terms.">🧫 Acids and bases</button>
+      </div>
+      <div class="sidebar-note"><span>✦</span><p><strong>Learning tip</strong><br />Show your working. Nevin can help you understand each step.</p></div>
+      <p class="sidebar-footer">DAY 2 · BUILDING AGENTIC AI APPLICATIONS</p>
+    </aside>
+
+    <section class="workspace">
+      <header class="topbar">
+        <div><p class="eyebrow">AI-POWERED LEARNING ASSISTANT</p><h1>Let's understand Chemistry.</h1></div>
+        <div class="status"><span class="status-dot"></span> Learning mode</div>
+      </header>
+
+      <section class="chat-panel" aria-label="Chemistry conversation">
+        <div class="welcome" id="welcome">
+          <div class="welcome-icon">⚗️</div>
+          <p class="eyebrow">WELCOME TO NEVIN</p>
+          <h2>What are you working on today?</h2>
+          <p>Share a Chemistry question, a calculation, or a concept you would like explained.</p>
+          <div class="suggestions">
+            <button class="suggestion" data-prompt="How many moles are in 18 grams of water (H₂O)? Show every step."><span>01</span><b>Calculate moles</b><small>Mass to moles</small></button>
+            <button class="suggestion" data-prompt="Balance this equation step by step: H₂ + O₂ → H₂O"><span>02</span><b>Balance an equation</b><small>Conservation of atoms</small></button>
+            <button class="suggestion" data-prompt="Explain the difference between ionic and covalent bonding with examples."><span>03</span><b>Understand bonding</b><small>Core Chemistry concept</small></button>
+          </div>
+        </div>
+        <div class="messages" id="messages" aria-live="polite"></div>
+      </section>
+
+      <form class="composer" id="chat-form">
+        <label class="sr-only" for="question">Your Chemistry question</label>
+        <textarea id="question" rows="1" maxlength="2000" placeholder="Ask Nevin a Chemistry question..." required></textarea>
+        <button id="send" type="submit" aria-label="Send message">↑</button>
+        <div class="composer-hint">Nevin guides your learning. Always check important answers with your course materials.</div>
+      </form>
+      <footer class="page-footer">Built for curious learners · Nevin Chemistry Chatbot · Prototype</footer>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
