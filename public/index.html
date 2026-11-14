@@ -4,8 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Nevin is an AI-powered Chemistry learning assistant that guides students through Chemistry concepts and problems." />
-  <title>Nevin — Chemistry Learning Assistant</title>
+  <title>Nevin - Chemistry Learning Assistant</title>
+
+  <!-- Your own stylesheet: change the file name if yours is different -->
   <link rel="stylesheet" href="/styles.css" />
+
+  <!-- KaTeX CSS (same version as the KaTeX scripts below) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
 </head>
 <body>
   <main class="app-shell">
@@ -57,6 +62,13 @@
       <footer class="page-footer">Built for curious learners · Nevin Chemistry Chatbot · Prototype</footer>
     </section>
   </main>
+
+  <!-- Libraries: one copy of each, loaded before app.js -->
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+
   <script src="/app.js"></script>
 </body>
 </html>
